@@ -21,3 +21,10 @@
 .navbar a:hover {
   text-decoration: underline;
 }
+.language-selector{
+  display:flex;
+
+}
+.language-dropdown  {
+  flex-direction:column;
+}
