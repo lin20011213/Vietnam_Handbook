@@ -1,4 +1,4 @@
-/* LoginStyles.css */
+/* RegisterStyles.css */
 .container {
   display: flex;
   justify-content: center;
@@ -7,13 +7,13 @@
   background-color: #f5f5f5;
 }
 
-.login-form {
+.register-form {
   background: #ffffff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 400px;
+  width: 100vw;
+  max-width: 900px;
 }
 
 .login-form-input {
@@ -24,7 +24,7 @@
   margin-bottom: 15px;
 }
 
-.btn {
+.login-form-button {
   padding: 10px 15px;
   background-color: #F3BD8B;
   color: #ffffff;
@@ -32,22 +32,11 @@
   border-radius: 4px;
   cursor: pointer;
   width: 100%;
-  display: block;  /* 確保Link元素以塊狀顯示 */
-  text-align: center; /* 文字居中 */
   transition: background-color 0.3s;
-  text-decoration: none; /* 移除鏈接的下劃線 */
-  box-sizing: border-box;
 }
 
-.btn:hover {
+.login-form-button:hover {
   background-color: #d9a779;
-}
-
-.login-form-register {
-  margin: 0;       /* 移除邊距 */
-  padding: 0;      /* 移除填充 */
-  display: inline-block; /* 使其成為行內塊狀元素 */
-  width: 90%;     /* 完全匹配容器寬度 */
 }
 
 .login-form-register {

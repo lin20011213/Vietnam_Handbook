@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { withTranslation } from 'react-i18next';
 import './index.css';
+import { Link } from 'react-router-dom';
 
 
 const Login = ({ t }) => {
@@ -14,7 +15,6 @@ const Login = ({ t }) => {
   };
 
   return (
-    <div className="container">
       <div className="outside">
       <div className="image-container">
       <img src={require('./people.png')} alt="Background"/>
@@ -35,12 +35,11 @@ const Login = ({ t }) => {
             value={password} 
             onChange={e => setPassword(e.target.value)} 
           />
-          <button className="login-form-button" type="submit">{t('login_button')}</button>
+          <button className="btn login-form-button" type="submit">{t('login_button')}</button>
           <p/>
-          <button className="login-form-register" type="submit">{t('register')}</button>
+        <Link className="btn login-form-register" to="/Regiester">{t('register')}</Link>
         </form>
       </div>
-    </div>
     </div>
   );
 };

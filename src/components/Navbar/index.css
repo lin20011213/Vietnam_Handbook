@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;  /* 新增這行 */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  position: fixed; /* 添加這一行 */
+  top: 0; /* 添加這一行 */
+  left: 0; /* 添加這一行 */
+  right: 0; /* 添加這一行 */
+  z-index: 1000; /* 確保導航欄總是在其他內容的頂部 */
+}
+
+.nav-link {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* 如果您的其他樣式還沒有這些設定的話 */
+.navbar a:hover {
+  text-decoration: underline;
+}
