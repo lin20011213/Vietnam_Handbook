@@ -1,0 +1,76 @@
+/* LoginStyles.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.login-form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+.login-form-input {
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.login-form-button {
+  padding: 10px 15px;
+  background-color: #F3BD8B;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.login-form-button:hover {
+  background-color: #d9a779;
+}
+
+.login-form-register {
+  border-width:40px;
+  padding: 10px 15px;
+  background-color: #F3BD8B;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.login-form-register:hover {
+  background-color: #d9a779;
+}
+
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 15px;
+    width: 90%;
+  }
+}
+
+.image-container {
+  margin: 20px 25%;  /* 上下邊距20px, 左右邊距0 */
+  text-align: center;  /* 將圖片置中 */
+  width: 100%; /* 確保容器寬度為100% */
+  max-width: 200px; /* 與login-form等寬 */
+}
+
+.image-container img {
+  width: 100%;  /* 使圖片完全填充容器 */
+  height: auto;  /* 保持圖片的原始寬高比 */
+}
