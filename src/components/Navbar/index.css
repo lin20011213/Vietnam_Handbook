@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;  /* 新增這行 */
-  align-items: center;
+  align-items: left;
   padding: 10px 20px;
   background-color: #333;
   position: fixed; /* 添加這一行 */
@@ -15,6 +15,10 @@
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  width: 90px; /* 或其他您喜欢的值 */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /* 如果您的其他樣式還沒有這些設定的話 */
@@ -22,9 +26,21 @@
   text-decoration: underline;
 }
 .language-selector{
-  display:flex;
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  display:block ;
 
 }
+.language-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .language-dropdown  {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
   flex-direction:column;
 }

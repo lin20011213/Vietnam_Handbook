@@ -4,5 +4,9 @@
     "login_button": "Login",
     "account_word":"account",
     "password_word":"password",
-    "register":"register"
+    "register":"register",
+    "language":"Language",
+    "en":"English",
+    "zh-tw":"Chinese",
+    "vi-vn":"Vietnamese"
  }

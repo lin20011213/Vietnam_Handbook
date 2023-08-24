@@ -4,5 +4,9 @@
     "login_button": "登入",
     "account_word":"帳號",
     "password_word":"密碼",
-    "register":"註冊"
+    "register":"註冊",
+    "language":"語言",
+    "en":"英文",
+    "zh-tw":"中文",
+    "vi-vn":"越南文"
  }

@@ -4,5 +4,9 @@
     "login_button": "Đăng nhập",
     "account_word": "Tài khoản",
     "password_word": "Mật khẩu",
-    "register": "Đăng ký"
+    "register": "Đăng ký",
+    "language":"Ngôn ngữ",
+    "en":"Tiếng Anh",
+    "zh-tw":"người Trung Quốc",
+    "vi-vn":"Tiếng Việt"
 }

@@ -17,7 +17,7 @@ const Login = ({ t }) => {
   return (
       <div className="outside">
       <div className="image-container">
-      <img src={require('./people.png')} alt="Background"/>
+      <img src={require('./people.png')} alt="Background" loading="lazy"/>
       </div>
       <div className="login-form">
         <form onSubmit={handleSubmit}>
