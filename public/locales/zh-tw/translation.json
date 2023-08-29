@@ -8,5 +8,6 @@
     "language":"語言",
     "en":"英文",
     "zh-tw":"中文",
-    "vi-vn":"越南文"
+    "vi-vn":"越南文",
+    "logout_button":"登出"
  }

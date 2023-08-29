@@ -8,5 +8,6 @@
     "language":"Language",
     "en":"English",
     "zh-tw":"Chinese",
-    "vi-vn":"Vietnamese"
+    "vi-vn":"Vietnamese",
+    "logout_button":"log_out"
  }
