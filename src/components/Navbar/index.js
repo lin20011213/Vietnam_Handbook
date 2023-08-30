@@ -6,15 +6,13 @@ import { useCookies } from 'react-cookie';
 
 
 function Navbar({ t, i18n }) {
-  const [cookies] = useCookies(['username', 'session']);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const language_list =  [
     { id: 'en', name: 'English' },
     { id: 'zh-tw', name: 'Taiwan' },
     { id: 'vi-vn', name: 'Vietnam' }
   ];
-  const [isLogged, setIsLogged] = useState(false);
-
+  const [cookies] = useCookies(['username', 'session']);
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
@@ -34,14 +32,6 @@ function Navbar({ t, i18n }) {
     }
   };
 
-  useEffect(() => {
-    const sessionCookie = document.cookie.split(';').some((item) => item.trim().startsWith('session='));
-
-    if (sessionCookie) {
-      setIsLogged(true);
-    }
-  }, []);
-
   //登出清除 cookie
   const logout = () => {
     const cookies = document.cookie.split(";");
@@ -52,7 +42,6 @@ function Navbar({ t, i18n }) {
       const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
       document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
     }
-    setIsLogged(false); // update the state after log out
   };
 
   return (
